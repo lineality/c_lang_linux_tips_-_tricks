@@ -1,6 +1,7 @@
 # c_lang_linux_tips_&_tricks
 
-# Minimal Linux Command Line C Program Compile & Run
+#  Compile & Run: minimal linux terminal process
+using gcc to compile a C language program
 
 #### Assuming you have a source code file,  e.g.  "source_file_name.c"
 ```
