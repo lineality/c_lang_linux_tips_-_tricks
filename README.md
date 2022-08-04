@@ -42,6 +42,50 @@ $ ./FILENAME.exe
 ```
 
 
-# arguments
-https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/ 
+# input arguments
+```
+$ ./FILENAME.exe ARGUMENT_1 ARGUMENT_2 ETC
+```
 
+```
+#include <stdio.h>
+
+int main( int argc, char *argv[] )  {
+
+    // you will use this to store an input
+    int input_a;
+    // you will use this to store the calculated number of added inputs
+    int number_of_added_inputs;
+ 
+    // calculate the number of added inputs
+    number_of_added_inputs = argc - 1;
+ 
+    // print the total number of inputs
+    printf("number 'o added inputs: %d\n", number_of_added_inputs);
+
+    // print each input and its number
+    for (int i = 0; i < argc; ++i){
+        // print its number 
+        printf("%d is ", i);
+        // print each input 
+        printf("'%s'\n", argv[i]);
+        }
+
+    // ask user to type in a number:
+    printf("Enter an integer\n");
+    // read in the user input
+    scanf("%d", &input_a);
+    
+    // read back the input
+    printf("You typed in this, yes?  %d\n", input_a);
+    
+// Finish: OK!
+return 0;
+}
+
+```
+
+#### see: 
+- https://www.tutorialspoint.com/cprogramming/c_command_line_arguments.htm
+- https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/ 
+- https://www.programmingsimplified.com/c/program/print-integer 
